@@ -1,26 +1,30 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/LinearLayout1"
+    android:id="@+id/TableLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    android:orientation="vertical"
     tools:context=".Asteroides" >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:text="@string/app_name"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp" />
+	<TableRow android:gravity="center|top" >
+
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="30dp"
+		    android:gravity="center"
+		    android:text="@string/app_name"
+		    android:textColor="#FFFFFF"
+		    android:textSize="30sp" />
+
+	</TableRow>
+
+	<TableRow android:gravity="center" >
 
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:gravity="center_vertical|center_horizontal"
         android:text="@string/jugar"
         android:textColor="#000000"
@@ -30,10 +34,12 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:text="@string/configurar"
         android:textColor="#000000"
         android:width="200dp" />
+	</TableRow>
+
+	<TableRow android:gravity="center" >
 
     <Button
         android:id="@+id/button3"
@@ -52,5 +58,5 @@
         android:text="@string/salir"
         android:textColor="#000000"
         android:width="200dp" />
-
-</LinearLayout>
+	</TableRow>
+</TableLayout>
