@@ -14,35 +14,34 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        style="@style/TextoAsteroides.Botones"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/jugar"
-        style="@style/TextoAsteroides.Botones"
-        />
+        android:text="@string/jugar" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        style="@style/TextoAsteroides.Botones"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/configurar"
-        style="@style/TextoAsteroides.Botones"/>
+        android:text="@string/configurar" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
+        style="@style/TextoAsteroides.Botones"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/acerca_de"
-        style="@style/TextoAsteroides.Botones" />
+        android:text="@string/acerca_de" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
+        style="@style/TextoAsteroides.Botones"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/salir"
-        style="@style/TextoAsteroides.Botones" />
+        android:text="@string/salir" />
 
 </LinearLayout>
