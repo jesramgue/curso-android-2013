@@ -1,62 +1,97 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/TableLayout1"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:background="#000000"
     tools:context=".Asteroides" >
 
-	<TableRow android:gravity="center|top" >
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
 
-		<TextView
-		    android:layout_width="match_parent"
-		    android:layout_height="wrap_content"
-		    android:layout_marginTop="30dp"
-		    android:gravity="center"
-		    android:text="@string/app_name"
-		    android:textColor="#FFFFFF"
-		    android:textSize="30sp" />
+        <TextView
+            style="@style/TextoAsteroides"
+            android:paddingLeft="30dp"
+            android:text="@string/app_name"
+            android:textSize="50sp" />
 
-	</TableRow>
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher" />
+    </TableRow>
 
-	<TableRow android:gravity="center" >
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="30dp" >
 
-    <Button
-        android:id="@+id/button1"
+        <Button
+            android:id="@+id/button1"
+            style="@style/TextoAsteroides.BotonesHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/jugar" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/TextoAsteroides.BotonesHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="lanzarPreferencias"
+            android:text="@string/configurar" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp" >
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/TextoAsteroides.BotonesHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="lanzarPuntuaciones"
+            android:text="@string/highest_scores" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/TextoAsteroides.BotonesHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="lanzarAcercaDe"
+            android:text="@string/acerca_de" />
+
+    </TableRow>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/jugar"
-        android:textColor="#000000"
-        android:width="200dp" />
+        android:gravity="center"
+        android:paddingTop="20dp" >
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/configurar"
-        android:textColor="#000000"
-        android:width="200dp" />
-	</TableRow>
+        <Button
+            android:id="@+id/button5"
+            style="@style/TextoAsteroides.BotonesHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="salir"
+            android:text="@string/salir" />
+    </RelativeLayout>
 
-	<TableRow android:gravity="center" >
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/acerca_de"
-        android:textColor="#000000"
-        android:width="200dp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/salir"
-        android:textColor="#000000"
-        android:width="200dp" />
-	</TableRow>
 </TableLayout>

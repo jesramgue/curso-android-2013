@@ -27,6 +27,7 @@ public class Asteroides extends Activity {
 		 * 
 		 * });
 		 */
+		
 	}
 
 	/*
@@ -38,6 +39,21 @@ public class Asteroides extends Activity {
 
 	public void lanzarAcercaDe(View view) {
 		Intent i = new Intent(this, AcercaDe.class);
+		startActivity(i);
+	}
+	public void lanzarJuego(View view) {
+		Intent i = new Intent(this, Juego.class);
+		startActivity(i);
+	}
+
+	public void lanzarPreferencias(View view) {
+		Intent i = new Intent(this, Preferencias.class);
+		startActivity(i);
+	}
+
+	public void lanzarPuntuaciones(View view) {
+		Intent i = new Intent(this, Puntuaciones.class);
+		view.setBackgroundResource(R.drawable.degradado);
 		startActivity(i);
 	}
 
@@ -60,8 +76,13 @@ public class Asteroides extends Activity {
 		case R.id.acercaDe:
 			lanzarAcercaDe(null);
 			break;
+		case R.id.config:
+			lanzarPreferencias(null);
+			break;
 		}
 		return true;
 		/** true -> consumimos el item, no se propaga */
 	}
+
+	public static AlmacenPuntuaciones almacen = new AlmacenPuntuacionesArray();
 }

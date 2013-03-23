@@ -8,5 +8,6 @@
     <string name="configurar">Configurar</string>
     <string name="acerca_de">Acerca de</string>
     <string name="salir">Salir</string>
+    <string name="highest_scores">Puntuaciones</string>
 
 </resources>

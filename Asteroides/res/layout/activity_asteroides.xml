@@ -18,7 +18,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/jugar" />
+        android:text="@string/jugar"
+        android:onClick="lanzarJuego" />
 
     <Button
         android:id="@+id/button2"
@@ -26,7 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/configurar" />
+        android:text="@string/configurar" 
+        android:onClick="lanzarPreferencias"/>
 
     <Button
         android:id="@+id/button3"
@@ -37,8 +39,17 @@
         android:onClick="lanzarAcercaDe"
         android:text="@string/acerca_de" />
 
+	<Button
+	    android:id="@+id/button4"
+	    style="@style/TextoAsteroides.Botones"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:onClick="lanzarPuntuaciones"
+	    android:text="@string/highest_scores" />
+
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button5"
         style="@style/TextoAsteroides.Botones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

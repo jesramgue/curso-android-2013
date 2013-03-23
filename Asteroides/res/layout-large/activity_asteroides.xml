@@ -8,50 +8,54 @@
     tools:context=".Asteroides" >
 
     <TextView
+        style="@style/TextoAsteroides"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:text="@string/app_name"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp" />
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="30dp"
+        android:text="@string/app_name" />
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        style="@style/TextoAsteroides.Botones"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/jugar"
-        android:textColor="#000000"
-        android:width="200dp" />
+        android:text="@string/jugar" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        style="@style/TextoAsteroides.Botones"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/configurar"
-        android:textColor="#000000"
-        android:width="200dp" />
+        android:text="@string/configurar" 
+        android:onClick="lanzarPreferencias"/>
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
+        style="@style/TextoAsteroides.Botones"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/acerca_de"
-        android:textColor="#000000"
-        android:width="200dp" />
+        android:onClick="lanzarAcercaDe"
+        android:text="@string/acerca_de" />
+
+	<Button
+	    android:id="@+id/button4"
+	    style="@style/TextoAsteroides.Botones"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:onClick="lanzarPuntuaciones"
+	    android:text="@string/highest_scores" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
+        android:id="@+id/button5"
+        style="@style/TextoAsteroides.Botones"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/salir"
-        android:textColor="#000000"
-        android:width="200dp" />
+        android:onClick="salir"
+        android:text="@string/salir" />
 
 </LinearLayout>

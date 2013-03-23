@@ -8,5 +8,9 @@
     <string name="configurar">Settings</string>
     <string name="acerca_de">About</string>
     <string name="salir">Exit</string>
+    <string name="highest_scores">Puntuaciones</string>
+    <string name="title_activity_mi_actividad">MiActividad</string>
+    <string name="title_activity_puntuaciones">Puntuaciones</string>
+    <string name="title_activity_juego">Juego</string>
 
 </resources>
